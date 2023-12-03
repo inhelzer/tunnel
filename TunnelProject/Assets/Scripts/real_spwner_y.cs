@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spwner_yg : MonoBehaviour
+public class real_spwner_y : MonoBehaviour
 {
     [SerializeField] GameObject d;
     Coroutine nameC;
@@ -18,7 +18,7 @@ public class Spwner_yg : MonoBehaviour
         while (true)
         {
             Instantiate(d, transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(0.4f);
         }
     }
 
