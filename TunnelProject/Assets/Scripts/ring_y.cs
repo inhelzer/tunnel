@@ -9,14 +9,14 @@ public class ring_y : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scaleChange = new Vector3(1, 1);
-        Destroy(gameObject, 6);
+        scaleChange = new Vector3(500, 500);
+        Destroy(gameObject, 12);
     }
 
     // Update is called once per frame
     void Update()
     {
-        a = (float)(a + 0.01);
+        a = (float)(a + 0.005);
         scaleChange = new Vector3(a, a);
         transform.localScale = scaleChange;
     }
