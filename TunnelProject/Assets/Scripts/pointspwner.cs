@@ -20,7 +20,7 @@ public class pointspwner : MonoBehaviour
         while (true)
         {
             if(num == 3)
-            //Instantiate(d, transform.position, Quaternion.identity);
+            Instantiate(d, transform.position, Quaternion.identity);
             yield return new WaitForSeconds(0.2f);
         }
     }
