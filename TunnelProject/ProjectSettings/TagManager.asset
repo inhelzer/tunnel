@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - wall
+  - Link
   layers:
   - Default
   - TransparentFX
@@ -41,4 +42,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: tunnel
+    uniqueID: 1492977759
+    locked: 0
+  - name: objects
+    uniqueID: 1226611745
+    locked: 0
+  - name: player
+    uniqueID: 2542000239
     locked: 0

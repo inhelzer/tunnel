@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/op_yg.unity
+    guid: 9021a2da2fc27a84da53478320889178
+  - enabled: 1
+    path: Assets/Scenes/Yehonatan.unity
+    guid: 8f0d462867e4c4ecd85a5babfd62e96a
+  - enabled: 1
     path: Assets/Scenes/00.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

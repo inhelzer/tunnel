@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class real_spwner_y : MonoBehaviour
 {
-    [SerializeField] GameObject d;
+    [SerializeField] GameObject prefub;
+    [SerializeField] float spownertime;
     Coroutine nameC;
     // Start is called before the first frame update
     void Start()
@@ -17,8 +18,8 @@ public class real_spwner_y : MonoBehaviour
     {
         while (true)
         {
-            Instantiate(d, transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(1f);
+            Instantiate(prefub, transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(spownertime);
         }
     }
 

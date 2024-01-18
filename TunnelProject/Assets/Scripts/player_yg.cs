@@ -13,6 +13,6 @@ public class player_yg : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(10f * Time.deltaTime * Input.GetAxis("Horizontal"), 10f * Time.deltaTime * Input.GetAxis("Vertical"), 0);
+        transform.Translate(10f * Time.deltaTime * Input.GetAxis("Horizontal"), 0, 0);
     }
 }
