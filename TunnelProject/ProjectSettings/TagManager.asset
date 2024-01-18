@@ -6,6 +6,7 @@ TagManager:
   tags:
   - wall
   - Link
+  - destroy
   layers:
   - Default
   - TransparentFX
