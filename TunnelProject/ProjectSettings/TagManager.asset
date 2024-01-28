@@ -8,6 +8,7 @@ TagManager:
   - Link
   - destroy
   - stone
+  - cart
   layers:
   - Default
   - TransparentFX
