@@ -12,7 +12,7 @@ public class life_h : MonoBehaviour
     void Start()
     {
         currentlife = maxlife;
-        Debug.Log("works");
+        
     }
 
     // Update is called once per frame

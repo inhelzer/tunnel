@@ -26,7 +26,7 @@ public class player_yg : MonoBehaviour
     {
         if(iscart)
         {
-            transform.position = cartobg.transform.position + new Vector3(0,1,0);
+            transform.position = cartobg.transform.position + new Vector3(0,0.6f,0);
         }
         if (Input.GetButtonDown("Jump"))
         {
