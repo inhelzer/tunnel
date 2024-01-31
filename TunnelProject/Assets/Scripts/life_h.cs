@@ -20,6 +20,10 @@ public class life_h : MonoBehaviour
     {
         textlife.GetComponent<Text>().text = currentlife.ToString();
         Debug.Log("works");
+        if (currentlife == 0)
+        {
+            FindObjectOfType<level_loder>().LoadNextScene();
+        }
     }
 
     public void LooseLife()
