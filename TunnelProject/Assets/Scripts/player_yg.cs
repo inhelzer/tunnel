@@ -20,6 +20,10 @@ public class player_yg : MonoBehaviour
         {
             iscart = true;
         }
+        if(other.gameObject.tag == "stone")
+        {
+            FindObjectOfType<life_h>().LooseLife();
+        }
     }
     // Update is called once per frame
     void Update()

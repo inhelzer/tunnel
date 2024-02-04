@@ -25,7 +25,7 @@ public class stone_sp_yg : MonoBehaviour
             while(true)
             {
                 Instantiate(go, transform.position, Quaternion.identity);
-                yield return new WaitForSeconds(Random.Range(100, 1000));
+                yield return new WaitForSeconds(Random.Range(1, 7));
 
             }
         }
