@@ -23,7 +23,7 @@ public class hinge : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
             Debug.Log("gg");
         }
     }

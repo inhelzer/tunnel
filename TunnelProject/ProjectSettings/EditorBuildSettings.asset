@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/op_yg.unity
     guid: 9021a2da2fc27a84da53478320889178
   - enabled: 1
-    path: Assets/Scenes/Yehonatan.unity
+    path: Assets/Scenes/level2_yg.unity
     guid: 8f0d462867e4c4ecd85a5babfd62e96a
   - enabled: 0
     path: Assets/Scenes/00.unity
