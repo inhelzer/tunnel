@@ -7,7 +7,7 @@ public class pointspwner : MonoBehaviour
     
     [SerializeField] GameObject d;
     Coroutine nameC;
-    int num;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,15 +19,15 @@ public class pointspwner : MonoBehaviour
     {
         while (true)
         {
-            if(num == 3)
+            
             Instantiate(d, transform.position, Quaternion.identity);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(Random.Range(0, 10));
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        num = Random.Range(Random.Range(0, 10), 10);
+       
     }
 }
