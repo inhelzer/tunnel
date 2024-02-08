@@ -4,7 +4,7 @@ public class Rope : MonoBehaviour {
 
 	public Rigidbody2D hook;
 	public GameObject linkPrefab;
-	public Weight weigth;
+	public Weight weigtht;
 	private Vector3 scaleChange;
 	private float a = 0;
 	public int links = 5;
@@ -13,7 +13,15 @@ public class Rope : MonoBehaviour {
 	GameObject link;
 
 	void Start () {
+		
 		GenerateRope();
+		Destroy(gameObject, 3);
+	}
+
+	public void NewWhight(Weight weigthtObject)
+    {
+		weigtht = weigthtObject;
+
 	}
 
 	void GenerateRope ()
@@ -28,7 +36,7 @@ public class Rope : MonoBehaviour {
 			previousRB = link.GetComponent<Rigidbody2D>();
 			
 		}
-		weigth.ConnectRopeEnd(link.GetComponent<Rigidbody2D>());
+		weigtht.ConnectRopeEnd(link.GetComponent<Rigidbody2D>());
 	}
     private void Update()
     {

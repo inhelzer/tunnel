@@ -12,6 +12,7 @@ public class Weight : MonoBehaviour {
 		joint.connectedBody = endRB;
 		joint.anchor = Vector2.zero;
 		joint.connectedAnchor = new Vector2(0f, -distanceFromChainEnd);
+		Destroy(gameObject,3);	
 	}
 
 	private void Update()
@@ -19,22 +20,7 @@ public class Weight : MonoBehaviour {
 		transform.Translate(-0.005f, 0, 0);
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		if(other.tag =="frog")
-		{
-			Invoke("Reset" , 2);
-		}
-		if(other.tag =="candy")
-		{
-			Destroy(other.gameObject);
-		}
-	}
-   
-   void Reset()
-   {
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-   }
+	
 
 
 }
