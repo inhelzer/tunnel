@@ -34,7 +34,6 @@ public class player_yg : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump"))
         {
-            
             iscart = false;
             GetComponent<Rigidbody2D>().velocity = new Vector3(xspeed, yspeed);
         }
