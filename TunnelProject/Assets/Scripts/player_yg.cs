@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class player_yg : MonoBehaviour
 {
-    [SerializeField] int xspeed = 1;
+    [SerializeField] int xspeed = 0;
     [SerializeField] int yspeed = 1;
     [SerializeField] GameObject cartobg;
-    bool iscart = false;
+    [SerializeField] bool iscart = false;
+    [SerializeField] float dis = 2;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +31,7 @@ public class player_yg : MonoBehaviour
     {
         if(iscart)
         {
-            transform.position = cartobg.transform.position + new Vector3(0,0.6f,0);
+            transform.position = cartobg.transform.position + new Vector3(0,dis,0);
         }
         if (Input.GetButtonDown("Jump"))
         {
