@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,11 +8,12 @@ public class life_h : MonoBehaviour
 {
     [SerializeField] int maxlife = 10;
     [SerializeField] GameObject textlife;
+    [SerializeField] GameObject brused;
     //[SerializeField] GameObject banner;
     //[SerializeField] GameObject icon;
     int currentlife;
     float hitTime;
-    float delay = 0.2f;
+    float delay = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -30,16 +32,17 @@ public class life_h : MonoBehaviour
            // banner.SetActive(true);
         }
 
-        if(hitTime + delay <= Time.timeSinceLevelLoad)
+        if(hitTime + delay >= Time.timeSinceLevelLoad)
         {
-            GetComponent<SpriteRenderer>().color = Color.white;
+            //brused.SetActive(false);
         }
     }
 
     public void LooseLife()
     {
         currentlife--;
-        GetComponent<SpriteRenderer>().color = Color.red;
+        brused.SetActive(true);
+        Debug.Log("kkkkkk");
         hitTime = Time.timeSinceLevelLoad;
     }
 }
