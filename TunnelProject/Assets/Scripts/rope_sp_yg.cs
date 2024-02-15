@@ -21,7 +21,7 @@ public class rope_sp_yg : MonoBehaviour
             Instantiate(rope, transform.position, Quaternion.identity) as GameObject;
 
             currentRope.GetComponent<Rope>().NewWhight(circle);
-            yield return new WaitForSeconds(1); 
+            yield return new WaitForSeconds(10); 
         }
     }
 
