@@ -12,13 +12,14 @@ public class life_h : MonoBehaviour
     //[SerializeField] GameObject banner;
     //[SerializeField] GameObject icon;
     int currentlife;
-    float hitTime;
-    float delay = 1f;
+    float hitTime = 1000;
+    float delay = 0.5f;
 
     // Start is called before the first frame update
     void Start()
     {
         currentlife = maxlife;
+
     }
 
     // Update is called once per frame
@@ -32,9 +33,9 @@ public class life_h : MonoBehaviour
            // banner.SetActive(true);
         }
 
-        if(hitTime + delay >= Time.timeSinceLevelLoad)
+        if(Time.timeSinceLevelLoad - delay >= hitTime)
         {
-            //brused.SetActive(false);
+            brused.SetActive(false);
         }
     }
 
@@ -42,7 +43,11 @@ public class life_h : MonoBehaviour
     {
         currentlife--;
         brused.SetActive(true);
-        Debug.Log("kkkkkk");
         hitTime = Time.timeSinceLevelLoad;
+    }
+    public void addlife()
+    {
+        currentlife++;
+        
     }
 }
