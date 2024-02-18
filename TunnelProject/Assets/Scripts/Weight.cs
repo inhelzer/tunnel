@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class Weight : MonoBehaviour {
 
@@ -12,12 +14,12 @@ public class Weight : MonoBehaviour {
 		joint.connectedBody = endRB;
 		joint.anchor = Vector2.zero;
 		joint.connectedAnchor = new Vector2(0f, -distanceFromChainEnd);
-		Destroy(gameObject,3);	
+			
 	}
 
 	private void Update()
 	{
-		transform.Translate(-0.005f, 0, 0);
+		transform.Translate(0, 0, 0);
 	}
 
 	

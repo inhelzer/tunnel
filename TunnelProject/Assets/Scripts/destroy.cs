@@ -31,5 +31,9 @@ public class destroy : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        if(other.gameObject.tag == "candy")
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
