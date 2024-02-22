@@ -7,12 +7,14 @@ public class stone_sp_yg : MonoBehaviour
     Coroutine g;
     [SerializeField] GameObject go;
     [SerializeField] GameObject candy;
-    GameObject[] candyObj = new GameObject[2];
+    GameObject[] candyObj = new GameObject[3];
+    [SerializeField] float delay;
     // Start is called before the first frame update
     void Start()
     {
         candyObj[0] = go;
-        candyObj[1] = candy;
+        candyObj[1] = go;
+        candyObj[2] = candy;
         g = StartCoroutine(name());
     }
 
@@ -27,8 +29,8 @@ public class stone_sp_yg : MonoBehaviour
         {
             while(true)
             {
-                Instantiate(candyObj[Random.Range(0,2)], transform.position, Quaternion.identity);
-                yield return new WaitForSeconds(Random.Range(1, 7));
+                Instantiate(candyObj[Random.Range(0,3)], transform.position, Quaternion.identity);
+                yield return new WaitForSeconds(Random.Range(1, delay));
 
             }
         }

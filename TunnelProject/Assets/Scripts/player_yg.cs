@@ -9,6 +9,7 @@ public class player_yg : MonoBehaviour
     [SerializeField] GameObject cartobg;
     [SerializeField] bool iscart = false;
     [SerializeField] float dis = 2;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,9 @@ public class player_yg : MonoBehaviour
         {
             Debug.Log(12);
             FindObjectOfType<life_h>().LooseLife();
+            
         }
+
         if(other.gameObject.tag == "candy")
         {
             FindObjectOfType<life_h>().addlife();

@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class life_h : MonoBehaviour
 {
-    [SerializeField] int maxlife = 10;
+    [SerializeField] int maxlife = 3;
+    
+
     [SerializeField] GameObject textlife;
     [SerializeField] GameObject brused;
     //[SerializeField] GameObject banner;
@@ -19,6 +21,7 @@ public class life_h : MonoBehaviour
     void Start()
     {
         currentlife = maxlife;
+        brused.SetActive(false);
 
     }
 
@@ -29,8 +32,8 @@ public class life_h : MonoBehaviour
         
         if (currentlife <= 0)
         {
-            Debug.Log("g");
-           // banner.SetActive(true);
+            Debug.Log("game over");
+           
         }
 
         if(Time.timeSinceLevelLoad - delay >= hitTime)
@@ -41,13 +44,22 @@ public class life_h : MonoBehaviour
 
     public void LooseLife()
     {
+        Debug.Log("11");
         currentlife--;
+        FindObjectOfType<life_img_N>().UpdateLives(currentlife);
+        Debug.Log("22");
         brused.SetActive(true);
+        Debug.Log("33");
         hitTime = Time.timeSinceLevelLoad;
+
+        
+        
+
     }
     public void addlife()
     {
         currentlife++;
-        
+        FindObjectOfType<life_img_N>().UpdateLives(currentlife);
+
     }
 }
