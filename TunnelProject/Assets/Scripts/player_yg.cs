@@ -25,8 +25,14 @@ public class player_yg : MonoBehaviour
         }
         if(other.gameObject.tag == "stone")
         {
+            Debug.Log(12);
             FindObjectOfType<life_h>().LooseLife();
         }
+        if(other.gameObject.tag == "candy")
+        {
+            FindObjectOfType<life_h>().addlife();
+        }
+        
     }
     // Update is called once per frame
     void Update()

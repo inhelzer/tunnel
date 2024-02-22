@@ -16,7 +16,7 @@ public class hinge : MonoBehaviour
     void Update()
     {
 
-        Destroy(gameObject,3);
+        Destroy(gameObject,2);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
