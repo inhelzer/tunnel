@@ -9,7 +9,9 @@ public class player_yg : MonoBehaviour
     [SerializeField] GameObject cartobg;
     [SerializeField] bool iscart = false;
     [SerializeField] float dis = 2;
-    
+    [SerializeField] GameObject eat;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,5 +50,13 @@ public class player_yg : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = new Vector3(xspeed, yspeed);
         }
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            eat.SetActive(true);
+        }
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            eat.SetActive(false);
+        }
     }
 }
