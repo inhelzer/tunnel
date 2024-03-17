@@ -31,7 +31,7 @@ public class player_yg : MonoBehaviour
             
         }
 
-        if(other.gameObject.tag == "candy")
+        if(other.gameObject.tag == "candy" && eat.activeInHierarchy)
         {
             FindObjectOfType<life_h>().addlife();
         }

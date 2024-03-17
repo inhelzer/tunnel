@@ -58,7 +58,10 @@ public class life_h : MonoBehaviour
     }
     public void addlife()
     {
-        currentlife++;
+       
+         currentlife++;
+        
+        
         FindObjectOfType<life_img_N>().UpdateLives(currentlife);
 
     }
