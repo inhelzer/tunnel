@@ -10,6 +10,7 @@ public class player_yg : MonoBehaviour
     [SerializeField] bool iscart = false;
     [SerializeField] float dis = 2;
     [SerializeField] GameObject eat;
+    bool isEat;
 
 
     // Start is called before the first frame update
@@ -31,7 +32,7 @@ public class player_yg : MonoBehaviour
             
         }
 
-        if(other.gameObject.tag == "candy" && eat.activeInHierarchy)
+        if(other.gameObject.tag == "candy" && isEat)
         {
             FindObjectOfType<life_h>().addlife();
         }
@@ -53,10 +54,12 @@ public class player_yg : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             eat.SetActive(true);
+            isEat = true;
         }
         if (Input.GetKeyUp(KeyCode.E))
         {
             eat.SetActive(false);
+            isEat = false;
         }
     }
 }
