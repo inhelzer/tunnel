@@ -44,4 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fe1da5c0f3efc43872aa47d389d2b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go: {fileID: 7014963040584608201, guid: f47852697807f5f42bc70c86ee951b73, type: 3}
+  go: {fileID: 7014963040584608201, guid: 2a9eeb2b0aad89440918580197f24c83, type: 3}
+  candy: {fileID: 4364535746437476812, guid: 86a2fc67a86f9db48a3d3df5f6e6ca5a, type: 3}
+  delay: 4

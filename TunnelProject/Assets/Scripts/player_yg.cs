@@ -29,12 +29,13 @@ public class player_yg : MonoBehaviour
         {
             Debug.Log(12);
             FindObjectOfType<life_h>().LooseLife();
-            
+            Destroy(other.gameObject);
         }
 
-        if(other.gameObject.tag == "candy" && isEat)
+        if (other.gameObject.tag == "candy" && isEat)
         {
             FindObjectOfType<life_h>().addlife();
+            Destroy(other.gameObject);
         }
         
     }

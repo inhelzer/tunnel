@@ -175,6 +175,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1518352049501048040, guid: 69c1306887d763843a5a045c27b88588, type: 3}
+      propertyPath: go
+      value: 
+      objectReference: {fileID: 6087313900016228506, guid: 3d0c125384565e0449e5841413501add, type: 3}
+    - target: {fileID: 1518352049501048040, guid: 69c1306887d763843a5a045c27b88588, type: 3}
       propertyPath: candy
       value: 
       objectReference: {fileID: 4364535746437476812, guid: fc241d6f46a51a945ad979ffc304ce42, type: 3}
@@ -324,7 +328,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1492977759
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 43089d13db7f4487e9016d8b6b70360e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1473,10 +1477,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 346578373, guid: 819c23565f84e944cafa9b2590dbb89f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 475996226, guid: 819c23565f84e944cafa9b2590dbb89f, type: 3}
       propertyPath: textlife
       value: 
       objectReference: {fileID: 273399210}
+    - target: {fileID: 851641703, guid: 819c23565f84e944cafa9b2590dbb89f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8550537210065743842, guid: 819c23565f84e944cafa9b2590dbb89f, type: 3}
       propertyPath: cartobg
       value: 
