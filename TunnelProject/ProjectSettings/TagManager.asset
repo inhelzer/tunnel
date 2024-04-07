@@ -11,6 +11,10 @@ TagManager:
   - cart
   - player_g
   - Bad
+  - candy
+  - cloud
+  - hole
+  - sea
   layers:
   - Default
   - TransparentFX
